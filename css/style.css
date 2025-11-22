@@ -248,3 +248,99 @@ footer {
 .background-element:nth-child(3) { left: 50%; animation-duration: 6s; }
 .background-element:nth-child(4) { left: 70%; animation-duration: 8s; }
 .background-element:nth-child(5) { left: 90%; animation-duration: 5.5s; }
+
+/* === Responsive Mobile === */
+@media screen and (max-width: 768px) {
+    /* Sections : réduire le padding */
+    section {
+        padding: 2rem 1rem;
+    }
+
+    /* Navbar : menu en colonne si besoin */
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* Home : texte et avatar en colonne */
+    .home-content-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .home-text {
+        flex: 1 1 100%;
+        margin-left: 0;
+    }
+
+    .home-avatar-container {
+        flex: 1 1 100%;
+    }
+
+    .home-avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .salut {
+        font-size: 2rem;
+    }
+
+    .intro {
+        margin-left: 0;
+    }
+
+    .name {
+        font-size: 1.8rem;
+        margin-left: 0;
+    }
+
+    .job {
+        margin-left: 0;
+    }
+
+    /* Skills */
+    .skills-icons {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        font-size: 3rem;
+    }
+
+    /* Projects */
+    .project-img {
+        max-width: 100%;
+    }
+
+    .project-languages i {
+        font-size: 2.5rem;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+/* Très petits écrans (téléphones) */
+@media screen and (max-width: 480px) {
+    .salut {
+        font-size: 1.8rem;
+    }
+    .name {
+        font-size: 1.5rem;
+    }
+    .job {
+        font-size: 1rem;
+    }
+    .btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    .social-links {
+        gap: 1rem;
+    }
+}
